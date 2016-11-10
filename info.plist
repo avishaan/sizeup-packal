@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.atlassian.giangvo.sizeup</string>
+	<key>connections</key>
+	<dict>
+		<key>10545611-AE6F-4A6A-BDF2-B8B47428A453</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4DD38108-221F-46EB-A42B-5CB5922E8148</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>4DD38108-221F-46EB-A42B-5CB5922E8148</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Giang Vo</string>
+	<key>description</key>
+	<string>Control window</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Sizeup</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python sizeup.py "execute" "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4DD38108-221F-46EB-A42B-5CB5922E8148</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>mv</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Plz wait...</string>
+				<key>script</key>
+				<string>python sizeup.py "generate_feedbacks" "{query}"</string>
+				<key>title</key>
+				<string>Manage Window</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>10545611-AE6F-4A6A-BDF2-B8B47428A453</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>10545611-AE6F-4A6A-BDF2-B8B47428A453</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>4DD38108-221F-46EB-A42B-5CB5922E8148</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/giangvo/my-alfred-wf</string>
+</dict>
+</plist>
